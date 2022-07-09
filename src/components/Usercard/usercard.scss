@@ -1,0 +1,26 @@
+.user {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    height: 15rem;
+    border-radius: 3px;
+    background-color: rgba(0, 128, 0, 0.151);
+    padding: 1rem;
+    margin-top: 2rem;
+    h1 {
+        margin-left: 1rem;
+    }
+    .user__card {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+        padding: .6rem;
+        border-radius: 3px;
+        background-color: rgba(225, 0, 0, 0.05);
+        .avatar {
+            margin-right: 2rem;
+            border-radius: 50%;
+        }
+    }
+}

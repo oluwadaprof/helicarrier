@@ -1,0 +1,29 @@
+.filter {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .filterbutton {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        .approved {
+            color: green;
+            background-color: rgba(0, 128, 0, 0.151);
+        }
+        .pending {
+            color: goldenrod;
+            background-color: rgba(189, 189, 3, 0.103);
+        }
+        .declined {
+            background-color: rgba(225, 0, 0, 0.05);
+            color: crimson;
+        }
+        button {
+            width: 8rem;
+            height: 2.3rem;
+            border-radius: 3px;
+            border: none;
+        }
+    }
+}

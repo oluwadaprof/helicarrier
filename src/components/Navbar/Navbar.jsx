@@ -4,12 +4,15 @@ import SearchIcon from '@material-ui/icons/Search'
 
 const Navbar = () => {
     return (
-        <div className="wrapper">
-            <div className="search">
-                <input type="text" placeholder='Search...' />
-                <SearchIcon />
+        <div className="navbar">
+            <div className="wrapper">
+                <div className="search">
+                    <input type="text" placeholder='Search...' />
+                    <SearchIcon className='icon' />
+                </div>
             </div>
         </div>
+        
     )
 }
 

@@ -1,0 +1,36 @@
+.navbar {
+    height: 50px;
+    border-bottom: 1px solid rgb(231, 228, 228);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: gray;
+    .wrapper {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        justify-content: space-between;
+        width: 100%;
+        .search {
+            cursor: pointer;
+            margin: auto;
+            display: flex;
+            width: 25rem;
+            align-items: center;
+            border: 0.5px solid lightgray;
+            padding: 3px;
+            input {
+                border: none;
+                outline: none;
+                background-color: transparent;
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
+            .icon {
+                position: relative;
+                left: 50%;
+            }
+        }
+    }
+}

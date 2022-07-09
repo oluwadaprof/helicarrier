@@ -1,0 +1,19 @@
+.home {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    .nav__container {
+        flex: 1;
+    }
+    .centered__container {
+        width: 50%;
+        height: 53.9rem;
+        margin: auto;
+        // background-color: blue;
+        .grouped__container {
+            margin-top: 2rem;
+            margin-left: 3.4rem;
+        }
+    }
+}
