@@ -6,9 +6,7 @@ const GroupedData = () => {
     return (
         <div className='grouped' >
             <Usercard />
-            <Usercard />
-            <Usercard />
-            <Usercard />
+           
         </div>
     )
 }

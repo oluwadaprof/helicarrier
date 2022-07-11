@@ -55,21 +55,22 @@ var data = [{
         game_id: 7
     }
 ];
+export default data;
 
 
 
-function extract() {
-    var groups = {};
+// function extract() {
+//     var groups = {};
 
-    data.forEach(function(val) {
-        var date = val.time.split('T')[0];
-        if (date in groups) {
-            groups[date].push(val);
-        } else {
-            groups[date] = new Array(val);
-        }
-    });
-    console.log(groups);
-    return groups;
-}
-extract();
+//     data.forEach(function(val) {
+//         var date = val.time.split('T')[0];
+//         if (date in groups) {
+//             groups[date].push(val);
+//         } else {
+//             groups[date] = new Array(val);
+//         }
+//     });
+//     console.log(groups);
+//     return groups;
+// }
+// extract();
