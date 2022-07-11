@@ -57,34 +57,19 @@ var data = [{
 ];
 
 
-const groupByDate = (data) => {
-    const groups = data.reduce((groups, transactions) => {
-        const date = transactions.createdAt.split("T")[0];
-        if (!groups[date]) {
-            groups[date] = []
+
+function extract() {
+    var groups = {};
+
+    data.forEach(function(val) {
+        var date = val.time.split('T')[0];
+        if (date in groups) {
+            groups[date].push(val);
+        } else {
+            groups[date] = new Array(val);
         }
-        groups[date].push(transactions)
-        return groups;
-    }, {})
-    console.log(groups)
+    });
+    console.log(groups);
+    return groups;
 }
-
-groupByDate();
-
-// function extract() {
-//     var groups = {};
-
-//     data.forEach(function(val) {
-//         var date = val.time.split('T')[0];
-//         if (date in groups) {
-//             groups[date].push(val.owner);
-//         } else {
-//             groups[date] = new Array(val.owner);
-//         }
-//     });
-
-//     console.log(groups);
-//     return groups;
-// }
-
-// extract();
+extract();
