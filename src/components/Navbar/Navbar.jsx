@@ -1,18 +1,20 @@
-import React, {useState} from 'react'
+import React, {useRef} from 'react'
 import './navbar.scss'
 import SearchIcon from '@material-ui/icons/Search'
 
-const Navbar = () => {
-    const [search , setSearch] = useState();
+const Navbar = (props) => {
+    // console.log(props)
+    const inputRef = useRef(" ");
 
-    function handleSearch (e){
-        setSearch(e.target.value)
+    const getSearchValue = ()=>{
+        props.searchKeyword(inputRef.current.value)
     }
+
     return (
         <div className="navbar">
             <div className="wrapper">
                 <div className="search">
-                    <input type="text" onChange={handleSearch}  placeholder='Search...' />
+                    <input ref={inputRef} type="text"  placeholder='Search...' value={props.search} onChange={getSearchValue} />
                     <SearchIcon className='icon' />
                 </div>
                 
