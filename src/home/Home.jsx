@@ -12,18 +12,31 @@ const Home = () => {
 
     const handleSearch = (search) =>{
         setSearch(search)
-        if(search !== ""){
-          const filteredData = Object.values(newdata).filter(( data) => {
-            console.log(data)
-            return data.join("").toLowerCase().includes(search.toLowerCase())
-          })
-          setSearchResult(filteredData)
-          console.log(filteredData)
-        }else {
-          setSearchResult(newdata)
-          console.log('new',newdata)
-        }
+        // console.log(Object.keys(newdata), 'keys')
+        // if(search !== ""){
+        //   const filteredData = Object.keys(newdata).filter(value => {
+        //     return Object.keys(value).join(" ").toLowerCase().includes(search.toLowerCase())
+        //   })
+        //   setSearchResult(filteredData)
+        //   console.log(filteredData)
+        // }else { 
+        //   setSearchResult(newdata)
+        //   console.log('new',newdata)
+        // }
+      // console.log(Object.keys(newdata).forEach(key  =>{
+      //   console.log(`key: ${key}, value: ${newdata[key]}`)
+      // }), 'keys')
+
+      if (search !== "") {
+        const filteredData = Object.keys(newdata).forEach(key => {
+          console.log(`key: ${key}, value: ${newdata[key]}`)
+   
+        })
+        // setSearchResult(filteredData)
+        console.log(filteredData, "result") 
     }
+  }
+
   return (
     <div className='home' >
         <div className="nav__container">
@@ -35,9 +48,6 @@ const Home = () => {
                   </div>
               </div>
         </div>
-       
-        
-  
     </div>
   )
 }
