@@ -8,6 +8,25 @@ import newdata from '../../data/newdata'
 
  
 const Usercard = () => {
+
+let color ='active'  ;
+  switch (color) {
+    case 'active':
+      color = '#fff';
+      break;
+    case 'pending':
+      color = '#2b2b' ;
+      break;
+    case 'approved':
+      color = '#2b2f3f';
+      break;
+    case 'declined':
+      color = '#78f4';
+      break;
+    default:
+     
+  }
+
  
 
 
@@ -20,13 +39,16 @@ const Usercard = () => {
             <h1>Date: {value}</h1>
             {itemsForTheDate.map((item, index) => (
               <div className="user__card" key={index}>
-                <Avatar className='avatar' />
-                <div className="content">
-                  <div className="username">{item.owner}</div>
-                  <div className="status">{item.notes}</div>
-                  <div className="status">{item.players}</div>
-                  <div className="status">{item.sport}</div>
+                <div className='divider' >
+                  <Avatar className='avatar' />
+                  <div className="content">
+                    <div className="username">{item.owner}</div>
+                    <div className="status">{item.notes}</div>
+                    <div className="status">{item.players}</div>
+                    <div className="status"  >{item.sport}</div>
+                  </div>
                 </div>
+                <div className={`indicator `} style={{backgroundColor:`${item.status === color ? color : null }`}} >1</div>
               </div>
             ))}
           </div>

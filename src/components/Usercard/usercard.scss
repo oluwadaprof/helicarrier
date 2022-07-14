@@ -17,12 +17,23 @@
         margin-left: 1rem;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         padding: .6rem;
         border-radius: 3px;
         background-color: rgba(225, 0, 0, 0.05);
+        .divider {
+            display: flex;
+        }
         .avatar {
             margin-right: 2rem;
             border-radius: 50%;
+        }
+        .indicator {
+            border-radius: 50%;
+            width: 1rem;
+            height: 1rem;
+            justify-content: flex-end;
+            // background-color: aqua;
         }
     }
 }

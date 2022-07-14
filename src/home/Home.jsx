@@ -5,6 +5,8 @@ import Navbar from '../components/Navbar/Navbar'
 import './home.scss'
 import newdata from '../data/newdata'
 
+
+
 const Home = () => {
 
   const [search , setSearch] = useState("");
@@ -29,10 +31,9 @@ const Home = () => {
 
       if (search !== "") {
         const filteredData = Object.keys(newdata).forEach(key => {
-          console.log(`key: ${key}, value: ${newdata[key]}`)
-   
+          console.log(`key: ${key}, value: ${newdata.key}`)
         })
-        // setSearchResult(filteredData)
+        setSearchResult(filteredData)
         console.log(filteredData, "result") 
     }
   }

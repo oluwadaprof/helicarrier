@@ -5,7 +5,8 @@ var newdata = {
             sport: "hockey",
             owner: "steve",
             players: "10",
-            game_id: 1
+            game_id: 1,
+            status: 'active'
         },
         {
             notes: "Game was played",
@@ -13,7 +14,8 @@ var newdata = {
             sport: "lacrosse",
             owner: "steve",
             players: "6",
-            game_id: 2
+            game_id: 2,
+            status: 'pending'
         },
         {
             notes: "Game was played",
@@ -21,7 +23,8 @@ var newdata = {
             sport: "hockey",
             owner: "henry",
             players: "10",
-            game_id: 4
+            game_id: 4,
+            status: 'declined'
         }
     ],
     "2017-10-14": [{
@@ -30,7 +33,8 @@ var newdata = {
             sport: "hockey",
             owner: "steve",
             players: "4",
-            game_id: 3
+            game_id: 3,
+            status: 'declined'
         },
         {
             notes: "Game was played",
@@ -38,7 +42,8 @@ var newdata = {
             sport: "soccer",
             owner: "john",
             players: "12",
-            game_id: 5
+            game_id: 5,
+            status: 'online'
         }
     ],
     "2017-10-08": [{
@@ -47,7 +52,8 @@ var newdata = {
             sport: "hockey",
             owner: "bola",
             players: "14",
-            game_id: 6
+            game_id: 6,
+            status: 'pending'
         },
         {
             notes: "Game was played",
@@ -55,7 +61,8 @@ var newdata = {
             sport: "soccer",
             owner: "segun",
             players: "6",
-            game_id: 7
+            game_id: 7,
+            status: 'active'
         }
     ]
 };
