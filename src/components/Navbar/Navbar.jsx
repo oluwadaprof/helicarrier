@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 import './navbar.scss'
-import SearchIcon from '@material-ui/icons/Search'
+import SearchIcon from '@mui/icons-material/Search';
 
 const Navbar = (props) => {
     // console.log(props)

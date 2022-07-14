@@ -9,10 +9,10 @@ import newdata from '../../data/newdata'
  
 const Usercard = () => {
 
-let color ='active'  ;
+let color ;
   switch (color) {
     case 'active':
-      color = '#fff';
+      color = { data: ('#fff')} ;
       break;
     case 'pending':
       color = '#2b2b' ;
@@ -48,7 +48,7 @@ let color ='active'  ;
                     <div className="status"  >{item.sport}</div>
                   </div>
                 </div>
-                <div className={`indicator `} style={{backgroundColor:`${item.status === color ? color : null }`}} >1</div>
+                <div className='indicator' style={{backgroundColor:`${item.status === color ? color : 'blue' }`}} >1</div>
               </div>
             ))}
           </div>
